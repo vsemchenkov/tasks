@@ -1,9 +1,11 @@
 
     // входной массив
-    let mas = [10, 6, 5, 12, 25, 99];
+    let mas = ["Конь", "Лошадь", "Волк", "Волчица", "Бизон", "Бизониха)"];
     // шаг массива 2
     let leng = mas.length;
     let k = 2;
+
+    console.log(mas);
 
     for (let i = leng - 1; i >= 0; i--) {
         mas[i + k] = mas[i];
