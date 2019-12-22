@@ -3,8 +3,14 @@
 let mas = [10, 6, 5, 12, 25, 99];
 // сдвиг массива 2
 let k = 2;
-// длинна массива
+// длинна массива mas
 let long = mas.length;
+
+// Вывод данных в index.html в объект document
+let masOutput = mas;
+let htmlDivMasOutput = document.getElementById('mas');
+htmlDivMasOutput.textContent = '[' + masOutput + ']';
+
 
 for (let i = 0; i<long+k+1+k; i++) {
     // добавление в конец массива данных (память)
@@ -24,3 +30,6 @@ for (let i = 0; i<long+k+1+k; i++) {
         mas.length--;
     }
 }
+// Вывод данных в index.html в объект document
+let htmlDivMas = document.getElementById('mas_output');
+htmlDivMas.textContent = '[' + mas + ']';
